@@ -1,2 +1,2 @@
 # highlyclickable
-A fun game of clicking without a cursor
+A fun game of clicking without a cursor.

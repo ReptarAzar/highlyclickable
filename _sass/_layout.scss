@@ -6,6 +6,9 @@ $left: 20%;
 html, body {
    height: 100%;
    margin: 0;
+
+   // hacky, fix
+   overflow: hidden;
 }
 
 .directions, .fail-message, .play-btn-holder {

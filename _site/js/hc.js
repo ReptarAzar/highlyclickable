@@ -3,11 +3,11 @@ $( document ).ready(function() {
     var touch = is_touch_device();
 
     function is_touch_device() {
-        return 'ontouchstart' in window // works on most browsers
-        || 'onmsgesturechange' in window; // works on ie10
+        return 'ontouchstart' in window || 'onmsgesturechange' in window; // works on ie10
+        // 'ontouchstart' works on most browsers, 'onmsgesturechange works on ie10
     }
 
-    if (touch == true) {
+    if (touch === true) {
         $('.touch-device').css({
             'display': 'block'
         });
@@ -21,17 +21,21 @@ function cursorNone() {
     document.body.style.cursor = "pointer";
 }
 
+// Fail!
 $(document).on('click', function (e) {
    console.log("fail!");
     document.body.style.cursor = "pointer";
-    $('.message').css({
+    $('.fail-message').css({
+        'display': 'block'
+    });
+    $('.play').css({
         'display': 'block'
     });
     $('.circle').css({
         'display': 'none'
     });
-    $('.play').css({
-        'display': 'block'
+    $('.directions').css({
+        'display': 'none'
     });
 });
 
@@ -50,7 +54,10 @@ $(".play").on('click', function (e) {
           'color': 'pink',
           'border-radius': '50%'
     });
-    $('.message').css({
+    $('.fail-message').css({
+        'display': 'none'
+    });
+    $('.directions').css({
         'display': 'none'
     });
 

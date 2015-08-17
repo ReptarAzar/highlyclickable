@@ -20,6 +20,7 @@ html, body {
 .directions {
     h1 {
         margin-bottom: 0;
+        font-size: 32px;
     }
     a {
         display: block;
@@ -47,7 +48,11 @@ html, body {
 
 .fail-message {
     display: none;
-    font-size: 72px;
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 4px;
+    }
 }
 
 .touch-device {

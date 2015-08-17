@@ -211,6 +211,10 @@ html, body {
     font-style: italic; }
   .about .back {
     margin-top: 50px; }
+  .about .byline {
+    position: absolute;
+    bottom: 20px;
+    left: 20px; }
 
 /**
  * Syntax highlighting styles

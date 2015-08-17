@@ -197,6 +197,12 @@ html, body {
   .touch-device img {
     width: 200px; }
 
+#counter {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  left: 20px; }
+
 .about {
   max-width: 620px;
   margin: 40px; }

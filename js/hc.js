@@ -1,20 +1,24 @@
 $( document ).ready(function() {
 
     var touch = is_touch_device();
-
     function is_touch_device() {
         return 'ontouchstart' in window || 'onmsgesturechange' in window; // works on ie10
         // 'ontouchstart' works on most browsers, 'onmsgesturechange works on ie10
     }
-
     if (touch === true) {
         $('.touch-device').css({
             'display': 'block'
         });
     } else {}
 
+    counterReset();
 });
 
+
+function counterReset() {
+    clicksCount = 0;
+    $( "#counter" ).html( "0" );
+}
 
 
 function cursorNone() {
@@ -23,7 +27,7 @@ function cursorNone() {
 
 // Fail!
 $(document).on('click', function (e) {
-   console.log("fail!");
+   // console.log("fail!");
     document.body.style.cursor = "pointer";
     $('.fail-message').css({
         'display': 'block'
@@ -41,11 +45,14 @@ $(document).on('click', function (e) {
 
 $(".play").on('click', function (e) {
     e.stopPropagation();
+    counterReset();
     $('.bg').css({
         'cursor': 'none'
     });
    document.body.style.cursor = "none";
-    console.log("play!");
+    $('#counter').css({
+        'display': 'block'
+    });
     $('.play').css({
         'display': 'none'
     });
@@ -60,7 +67,6 @@ $(".play").on('click', function (e) {
     $('.directions').css({
         'display': 'none'
     });
-
 });
 
 $(".circle").on('click',function(e) {
@@ -71,13 +77,13 @@ $(".circle").on('click',function(e) {
     var top = Math.floor(Math.random() * (h - diameter));
     var left = Math.floor(Math.random() * (w- diameter));
     var c = getRandomColor();
-      console.log('screen width = ' + w);
-      console.log('screen height = ' + h);
+      // console.log('screen width = ' + w);
+      // console.log('screen height = ' + h);
 
-      console.log('circle diameter = ' + diameter);
+      // console.log('circle diameter = ' + diameter);
 
-      // if diameter < 50: "ouch good lick!"
-
+    clicksCount += 1;
+    $( "#counter" ).html( clicksCount );
 
     $(this).css({
     'left': left+'px',

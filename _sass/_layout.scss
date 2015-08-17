@@ -3,6 +3,11 @@ $diameter: 500px;
 $top: 20%;
 $left: 20%;
 
+html, body {
+   height: 100%;
+   margin: 0;
+}
+
 .circle {
     display: none;
     position: absolute;
@@ -20,7 +25,25 @@ $left: 20%;
     font-size: 72px;
 }
 
-html, body {
-   height: 100%;
-   margin: 0;
+.touch-device {
+    // is displayed if ontouchstart returns true
+    display: none;
+
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    text-align: center;
+    z-index: 5;
+
+    .touch-message {
+        width: 100%;
+        padding: 50px 0 20px;
+    }
+    img {
+        width: 200px;
+    }
 }

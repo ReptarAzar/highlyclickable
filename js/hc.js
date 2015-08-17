@@ -1,12 +1,17 @@
 $( document ).ready(function() {
 
+    var touch = is_touch_device();
+
     function is_touch_device() {
         return 'ontouchstart' in window // works on most browsers
-            || 'onmsgesturechange' in window; // works on ie10
-    };
-    if (is_touch_device = true) {
-        console.log("it's not a touch device");
+        || 'onmsgesturechange' in window; // works on ie10
     }
+
+    if (touch == true) {
+        $('.touch-device').css({
+            'display': 'block'
+        });
+    } else {}
 
 });
 

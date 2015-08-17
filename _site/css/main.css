@@ -141,6 +141,10 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
+html, body {
+  height: 100%;
+  margin: 0; }
+
 .circle {
   display: none;
   position: absolute;
@@ -155,9 +159,22 @@ pre {
   display: none;
   font-size: 72px; }
 
-html, body {
+.touch-device {
+  display: none;
   height: 100%;
-  margin: 0; }
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  text-align: center;
+  z-index: 5; }
+  .touch-device .touch-message {
+    width: 100%;
+    padding: 50px 0 20px; }
+  .touch-device img {
+    width: 200px; }
 
 /**
  * Syntax highlighting styles

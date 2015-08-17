@@ -1,3 +1,17 @@
+$( document ).ready(function() {
+
+    function is_touch_device() {
+        return 'ontouchstart' in window // works on most browsers
+            || 'onmsgesturechange' in window; // works on ie10
+    };
+    if (is_touch_device = true) {
+        console.log("it's not a touch device");
+    }
+
+});
+
+
+
 function cursorNone() {
     document.body.style.cursor = "pointer";
 }

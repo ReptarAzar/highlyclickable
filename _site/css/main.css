@@ -201,11 +201,7 @@ html, body {
   max-width: 620px;
   margin: 40px; }
   .about .hc {
-    background-color: #eee;
-    color: #444;
-    font-family: monospace;
-    padding: 4px;
-    border-radius: 4px; }
+    font-style: italic; }
   .about .back {
     margin-top: 50px; }
 

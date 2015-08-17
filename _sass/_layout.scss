@@ -8,6 +8,31 @@ html, body {
    margin: 0;
 }
 
+.directions, .fail-message, .play-btn-holder {
+    width: 100%;
+    text-align: center;
+}
+
+.directions, .fail-message{
+    margin-top: 33%;
+}
+
+.directions {
+    h1 {
+        margin-bottom: 0;
+    }
+    a {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+.play {
+    margin: 0 auto;
+}
+
 .circle {
     display: none;
     position: absolute;
@@ -20,7 +45,7 @@ html, body {
     left: $left;
 }
 
-.message {
+.fail-message {
     display: none;
     font-size: 72px;
 }
@@ -45,5 +70,21 @@ html, body {
     }
     img {
         width: 200px;
+    }
+}
+
+.about {
+    max-width: 620px;
+    margin: 40px;
+
+    .hc {
+        background-color: #eee;
+        color: #444;
+        font-family: monospace;
+        padding: 4px;
+        border-radius: 4px;
+    }
+    .back {
+        margin-top: 50px;
     }
 }

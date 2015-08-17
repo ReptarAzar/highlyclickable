@@ -145,6 +145,24 @@ html, body {
   height: 100%;
   margin: 0; }
 
+.directions, .fail-message, .play-btn-holder {
+  width: 100%;
+  text-align: center; }
+
+.directions, .fail-message {
+  margin-top: 33%; }
+
+.directions h1 {
+  margin-bottom: 0; }
+.directions a {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px; }
+
+.play {
+  margin: 0 auto; }
+
 .circle {
   display: none;
   position: absolute;
@@ -155,7 +173,7 @@ html, body {
   top: 20%;
   left: 20%; }
 
-.message {
+.fail-message {
   display: none;
   font-size: 72px; }
 
@@ -175,6 +193,18 @@ html, body {
     padding: 50px 0 20px; }
   .touch-device img {
     width: 200px; }
+
+.about {
+  max-width: 620px;
+  margin: 40px; }
+  .about .hc {
+    background-color: #eee;
+    color: #444;
+    font-family: monospace;
+    padding: 4px;
+    border-radius: 4px; }
+  .about .back {
+    margin-top: 50px; }
 
 /**
  * Syntax highlighting styles

@@ -141,6 +141,24 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
+.circle {
+  display: none;
+  position: absolute;
+  border-radius: 50%;
+  background-color: pink;
+  height: 500px;
+  width: 500px;
+  top: 20%;
+  left: 20%; }
+
+.message {
+  display: none;
+  font-size: 72px; }
+
+html, body {
+  height: 100%;
+  margin: 0; }
+
 /**
  * Syntax highlighting styles
  */

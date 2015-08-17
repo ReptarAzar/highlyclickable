@@ -6,30 +6,60 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Your awesome title</title>
-    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Highly Clickable</title>
+    <meta name="description" content="a clever game of clicking
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://yourdomain.com/">
+
+    <link rel="canonical" href="http://highlyclickable.com//">
 </head>
 
 
-  <body>
+  <body class="bg">
 
     <header class="site-header">
 
 </header>
 
 
-    <div class="page-content">
-      <div class="wrapper">
-        
-      </div>
-    </div>
+        <!-- Game Rules
 
-    <footer class="site-footer">
+1. Start with a circle and cursor
+2. Move cursor — cursor: none;
+3. Click circle get smaller circle with cursor
+4. Repeat
+
+Should change color for each new level
+Should have a counter for each level-->
+
+<!--
+Day 2
+- Make the circle stay wholly on screen
+- Add a counter in the corner for how many you've gotten in a row
+- Make the circle smaller, not random
+-->
+
+    <div class="circle"></div>
+    <div class="bg"></div>
+    <div class="message">FAIL!</div>
+    <button class="play">Play</button>
+
+
+<!--
+Day 3
+- High Score counter with session ID cookie
+- Better looking colors with https://github.com/davidmerfield/randomColor
+- Publish it! Give it Name, URL, Analytics, Tumblr/Dribbble post with GIF demo
+- Circles scale/pop in and out
+-->
+
+
+    <footer>
 </footer>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/hc.js"></script>
 
 
   </body>

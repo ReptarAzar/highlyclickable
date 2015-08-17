@@ -1,0 +1,26 @@
+$backgroundColor: pink;
+$diameter: 500px;
+$top: 20%;
+$left: 20%;
+
+.circle {
+    display: none;
+    position: absolute;
+    border-radius: 50%;
+
+    background-color: $backgroundColor;
+    height: $diameter;
+    width: $diameter;
+    top: $top;
+    left: $left;
+}
+
+.message {
+    display: none;
+    font-size: 72px;
+}
+
+html, body {
+   height: 100%;
+   margin: 0;
+}

@@ -1,2 +1,60 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+
+  <body class="bg">
+
+        <!-- Game Rules
+
+1. Start with a circle and cursor
+2. Move cursor — cursor: none;
+3. Click circle get smaller circle with cursor
+4. Repeat  -->
+
+<!--
+Done
+- Make the circle stay wholly on screen
+- Prevent gameplay on touch devices
+- Publish it! Give it Name, URL
+- Add Analytics
+- Add a counter in the corner for how many you've gotten in a row
+
+Left
+- Make the circle smaller, not random
+- Share with Friends, Tumblr/Dribbble post with GIF demo
+- Favicon
+
+Bonus Improvements
+- Circles scale/pop in and out
+- Personal High Score counter with session ID cookie
+- Better looking colors with https://github.com/davidmerfield/randomColor
+
+Further Brainstormed Ideas
+- Share/Tweet your score after the game
+- Mousetrap style traps in the path to the circle
+- Lifelines, Press Space (or another btn) to see your mouse 2x per game
+- 3 High scores with 3 character input for name - Google Doc hack?
+- Put the current score in the circle
+-->
+
+    <div class="circle"></div>
+    <div class="bg"></div>
+    <div id="counter"></div>
+    <div class="fail-message"><h1>FAIL!</h1></div>
+    <div class="game-info">
+
+      <div class="directions">
+        <h1>Click the circles</h1>
+        <a href="/about">about</a>
+      </div>
+
+      <p class="play-btn-holder"><button class="play">Play</button></p>
+    </div>
+
+    <div class="touch-device">
+      <p class="touch-message">Sorry, this game is for devices with cursors.</p>
+      <img src="no-touch.svg" alt="no touch devices plz">
+    </div>
+
+  </body>
+
+</html>

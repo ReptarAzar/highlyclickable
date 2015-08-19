@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Highly Clickable</title>
+    <meta name="description" content="a clever game of clicking
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="canonical" href="http://highlyclickable.com//">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66411006-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+
+
+  <body class="bg">
+
+        <!-- Game Rules
+
+1. Start with a circle and cursor
+2. Move cursor — cursor: none;
+3. Click circle get smaller circle with cursor
+4. Repeat  -->
+
+<!--
+Done
+- Make the circle stay wholly on screen
+- Prevent gameplay on touch devices
+- Publish it! Give it Name, URL
+- Add Analytics
+- Add a counter in the corner for how many you've gotten in a row
+
+Left
+- Make the circle smaller, not random
+- Share with Friends, Tumblr/Dribbble post with GIF demo
+- Favicon
+
+Bonus Improvements
+- Circles scale/pop in and out
+- Personal High Score counter with session ID cookie
+- Better looking colors with https://github.com/davidmerfield/randomColor
+
+Further Brainstormed Ideas
+- Share/Tweet your score after the game
+- Mousetrap style traps in the path to the circle
+- Lifelines, Press Space (or another btn) to see your mouse 2x per game
+- 3 High scores with 3 character input for name - Google Doc hack?
+- Put the current score in the circle
+-->
+
+    <div class="circle"></div>
+    <div class="bg"></div>
+    <div id="counter"></div>
+    <div class="fail-message"><h1>FAIL!</h1></div>
+    <div class="game-info">
+
+      <div class="directions">
+        <h1>Click the circles</h1>
+        <a href="/about">about</a>
+      </div>
+
+      <p class="play-btn-holder"><button class="play">Play</button></p>
+    </div>
+
+    <div class="touch-device">
+      <p class="touch-message">Sorry, this game is for devices with cursors.</p>
+      <img src="no-touch.svg" alt="no touch devices plz">
+    </div>
+
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/hc.js"></script>
+
+
+  </body>
+
+</html>
